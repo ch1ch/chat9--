@@ -1,0 +1,84 @@
+package proto;
+
+option java_package = "com.redatoms.chat.server.common.data";
+
+
+message DataPackage {
+
+	enum CmdType {
+		SEND = 0;
+		ACK = 1;
+		NOTIFY = 2;
+		SYNC = 3;
+		RECIEVE = 4;
+		SEARCH_USER_BY_NAME = 10;
+		SEARCH_USER_BY_ID = 11;
+		ADD_FRIEND = 12;
+		DELETE_FRIEND = 13;
+		LIST_FRIENDS = 14;
+		CREATE_GROUP = 20;
+		UPDATE_GROUP = 21;
+		DELETE_GROUP = 22;
+		ADD_GROUP_MEMBERS = 23;
+		DELETE_GROUP_MEMBERS = 24;
+		UPDATE_PROFILE = 30;
+	}
+	required CmdType cmd = 1;
+	
+	message Message {
+		required int64 from = 1;
+		required int64 to = 2;
+		
+		enum MessageType {
+			PERSON_TO_PERSON = 0;
+			GROUP = 1;
+			CHANNEL = 2;
+		}
+		
+		required MessageType msgType = 3 [default = PERSON_TO_PERSON];
+		
+		enum ContentType {
+			TEXT = 0;
+			VOICE = 1;
+			FILE = 2;
+		}
+		
+		required ContentType contentType = 4 [default = TEXT];
+		
+		required string content = 5;
+		
+		optional int64 version = 6;
+		
+		optional int64 createTime = 7; 
+		
+		optional int64 localId = 8;
+		
+		optional int64 serverId = 9;
+	}
+	
+	message User {
+		optional int64 userId = 1;
+		optional string userName = 2;
+	}
+	
+	message Group {
+		optional int64 groupId = 1;
+		optional string groupName = 2;
+		repeated int64 members = 3;
+	}
+	
+	message Data {
+		repeated Message message = 1;	
+		optional int64 userId = 2;
+		optional string userName = 3;
+		repeated User user = 4;
+		repeated Group group = 5;
+	}
+	
+	optional Data data = 2;
+	
+	required int32 version = 3;
+	
+	required int32 seqNo = 4;
+}
+

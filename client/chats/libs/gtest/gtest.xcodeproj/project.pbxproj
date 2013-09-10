@@ -1,0 +1,178 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXFileReference section */
+		68AA4EC917C71E7E00566260 /* aclocal.m4 */ = {isa = PBXFileReference; lastKnownFileType = text; path = aclocal.m4; sourceTree = "<group>"; };
+		68AA4ECA17C71E7E00566260 /* build-aux */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "build-aux"; sourceTree = "<group>"; };
+		68AA4ECB17C71E7E00566260 /* CHANGES */ = {isa = PBXFileReference; lastKnownFileType = text; path = CHANGES; sourceTree = "<group>"; };
+		68AA4ECC17C71E7E00566260 /* cmake */ = {isa = PBXFileReference; lastKnownFileType = folder; path = cmake; sourceTree = "<group>"; };
+		68AA4ECD17C71E7E00566260 /* CMakeLists.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = "<group>"; };
+		68AA4ECE17C71E7E00566260 /* codegear */ = {isa = PBXFileReference; lastKnownFileType = folder; path = codegear; sourceTree = "<group>"; };
+		68AA4ECF17C71E7E00566260 /* configure */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = configure; sourceTree = "<group>"; };
+		68AA4ED017C71E7E00566260 /* configure.ac */ = {isa = PBXFileReference; lastKnownFileType = text; path = configure.ac; sourceTree = "<group>"; };
+		68AA4ED117C71E7E00566260 /* CONTRIBUTORS */ = {isa = PBXFileReference; lastKnownFileType = text; path = CONTRIBUTORS; sourceTree = "<group>"; };
+		68AA4ED217C71E7E00566260 /* fused-src */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "fused-src"; sourceTree = "<group>"; };
+		68AA4ED317C71E7E00566260 /* include */ = {isa = PBXFileReference; lastKnownFileType = folder; path = include; sourceTree = "<group>"; };
+		68AA4ED417C71E7E00566260 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		68AA4ED517C71E7E00566260 /* m4 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = m4; sourceTree = "<group>"; };
+		68AA4ED617C71E7E00566260 /* make */ = {isa = PBXFileReference; lastKnownFileType = folder; path = make; sourceTree = "<group>"; };
+		68AA4ED717C71E7E00566260 /* Makefile.am */ = {isa = PBXFileReference; lastKnownFileType = text; path = Makefile.am; sourceTree = "<group>"; };
+		68AA4ED817C71E7E00566260 /* Makefile.in */ = {isa = PBXFileReference; lastKnownFileType = text; path = Makefile.in; sourceTree = "<group>"; };
+		68AA4ED917C71E7E00566260 /* msvc */ = {isa = PBXFileReference; lastKnownFileType = folder; path = msvc; sourceTree = "<group>"; };
+		68AA4EDA17C71E7E00566260 /* README */ = {isa = PBXFileReference; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
+		68AA4EDB17C71E7E00566260 /* samples */ = {isa = PBXFileReference; lastKnownFileType = folder; path = samples; sourceTree = "<group>"; };
+		68AA4EDC17C71E7E00566260 /* scripts */ = {isa = PBXFileReference; lastKnownFileType = folder; path = scripts; sourceTree = "<group>"; };
+		68AA4EDD17C71E7E00566260 /* src */ = {isa = PBXFileReference; lastKnownFileType = folder; path = src; sourceTree = "<group>"; };
+		68AA4EDE17C71E7E00566260 /* test */ = {isa = PBXFileReference; lastKnownFileType = folder; path = test; sourceTree = "<group>"; };
+		68AA4EDF17C71E7E00566260 /* xcode */ = {isa = PBXFileReference; lastKnownFileType = folder; path = xcode; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		68AA4EC317C71E7E00566260 = {
+			isa = PBXGroup;
+			children = (
+				68AA4EC917C71E7E00566260 /* aclocal.m4 */,
+				68AA4ECA17C71E7E00566260 /* build-aux */,
+				68AA4ECB17C71E7E00566260 /* CHANGES */,
+				68AA4ECC17C71E7E00566260 /* cmake */,
+				68AA4ECD17C71E7E00566260 /* CMakeLists.txt */,
+				68AA4ECE17C71E7E00566260 /* codegear */,
+				68AA4ECF17C71E7E00566260 /* configure */,
+				68AA4ED017C71E7E00566260 /* configure.ac */,
+				68AA4ED117C71E7E00566260 /* CONTRIBUTORS */,
+				68AA4ED217C71E7E00566260 /* fused-src */,
+				68AA4ED317C71E7E00566260 /* include */,
+				68AA4ED417C71E7E00566260 /* LICENSE */,
+				68AA4ED517C71E7E00566260 /* m4 */,
+				68AA4ED617C71E7E00566260 /* make */,
+				68AA4ED717C71E7E00566260 /* Makefile.am */,
+				68AA4ED817C71E7E00566260 /* Makefile.in */,
+				68AA4ED917C71E7E00566260 /* msvc */,
+				68AA4EDA17C71E7E00566260 /* README */,
+				68AA4EDB17C71E7E00566260 /* samples */,
+				68AA4EDC17C71E7E00566260 /* scripts */,
+				68AA4EDD17C71E7E00566260 /* src */,
+				68AA4EDE17C71E7E00566260 /* test */,
+				68AA4EDF17C71E7E00566260 /* xcode */,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXLegacyTarget section */
+		68AA4EC817C71E7E00566260 /* gtest */ = {
+			isa = PBXLegacyTarget;
+			buildArgumentsString = "$(ACTION)";
+			buildConfigurationList = 68AA4EE017C71E7E00566260 /* Build configuration list for PBXLegacyTarget "gtest" */;
+			buildPhases = (
+			);
+			buildToolPath = /usr/bin/make;
+			buildWorkingDirectory = /Users/dan.liao/workplace/chats/chats/libs/gtest;
+			dependencies = (
+			);
+			name = gtest;
+			passBuildSettingsInEnvironment = 1;
+			productName = gtest;
+		};
+/* End PBXLegacyTarget section */
+
+/* Begin PBXProject section */
+		68AA4EC417C71E7E00566260 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 68AA4EC717C71E7E00566260 /* Build configuration list for PBXProject "gtest" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 68AA4EC317C71E7E00566260;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				68AA4EC817C71E7E00566260 /* gtest */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin XCBuildConfiguration section */
+		68AA4EC517C71E7E00566260 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx10.6;
+			};
+			name = Debug;
+		};
+		68AA4EC617C71E7E00566260 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				SDKROOT = macosx10.6;
+			};
+			name = Release;
+		};
+		68AA4EE117C71E7E00566260 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				DEBUGGING_SYMBOLS = YES;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = gtest;
+			};
+			name = Debug;
+		};
+		68AA4EE217C71E7E00566260 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = gtest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		68AA4EC717C71E7E00566260 /* Build configuration list for PBXProject "gtest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				68AA4EC517C71E7E00566260 /* Debug */,
+				68AA4EC617C71E7E00566260 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		68AA4EE017C71E7E00566260 /* Build configuration list for PBXLegacyTarget "gtest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				68AA4EE117C71E7E00566260 /* Debug */,
+				68AA4EE217C71E7E00566260 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 68AA4EC417C71E7E00566260 /* Project object */;
+}

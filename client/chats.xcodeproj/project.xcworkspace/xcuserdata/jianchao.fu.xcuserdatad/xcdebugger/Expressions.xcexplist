@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "cocos2d::CCArray::createWithCapacity(unsigned int):CCArray.cpp">
+      </ContextState>
+      <ContextState
+         contextName = "MessageLayer::init():MessageLayer.cpp">
+      </ContextState>
+      <ContextState
+         contextName = "FriendsHomeLayer::AddfriendtoLayer(char const*):FriendsHomeLayer.cpp">
+      </ContextState>
+      <ContextState
+         contextName = "AddFriendtoDB(char const*, int):MessageHandle.cpp">
+      </ContextState>
+      <ContextState
+         contextName = "WebsocketHandle::onMessage(cocos2d::extension::WebSocket*, cocos2d::extension::WebSocket::Data const&amp;):WebSocketHandle.cpp">
+      </ContextState>
+      <ContextState
+         contextName = "SQLiteUtil::GetOneFri(char const*, int):sqlite3DB.cpp">
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

@@ -1,0 +1,127 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<parent>
+		<artifactId>chat-server-parent</artifactId>
+		<groupId>com.redatoms.chat.server</groupId>
+		<version>0.0.1-SNAPSHOT</version>
+	</parent>
+	<modelVersion>4.0.0</modelVersion>
+	<artifactId>chat-server-connection</artifactId>
+	<!-- <packaging>bundle</packaging> -->
+
+ 	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-shade-plugin</artifactId>
+				<version>1.2.1</version>
+				<executions>
+					<execution>
+						<phase>package</phase>
+						<goals>
+							<goal>shade</goal>
+						</goals>
+						<configuration>
+							<transformers>
+								<transformer
+									implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
+									<mainClass>com.redatoms.chat.server.connection.WebSocketServer</mainClass>
+								</transformer>
+							</transformers>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+		</plugins>
+	</build>
+
+	<dependencies>
+ 		<dependency>
+			<groupId>com.redatoms.chat.server</groupId>
+			<artifactId>chat-server-common</artifactId>
+			<version>${project.version}</version>
+			<scope>compile</scope>
+		</dependency> 
+ 		<dependency>
+			<groupId>io.netty</groupId>
+			<artifactId>netty-all</artifactId>
+			<version>4.0.7.Final</version>
+			<scope>compile</scope>
+		</dependency>
+	</dependencies>
+	
+	
+	<!-- <build>
+        <plugins>
+            <plugin>
+                This plugin takes care of packaging the artifact as 
+                    an OSGi Bundle
+                <groupId>org.apache.felix</groupId>
+                <artifactId>maven-bundle-plugin</artifactId>
+                <version>${version.bundle.plugin}</version>
+                <extensions>true</extensions>
+                <configuration>
+                    <instructions>
+                        OSGi Manifest Metadata is specified here
+                        The Bundle SymbolicName is the same as the artifact 
+                            ID
+                        <Bundle-SymbolicName>${project.artifactId}</Bundle-SymbolicName>
+
+                        Specify the Bundle activator, which is invoked 
+                            when the Bundle is started
+                        <Bundle-Activator>com.redatoms.chat.server.connection.WebSocketServer</Bundle-Activator>
+
+                        Automatically compute all the necessary Import-Package 
+                            statements
+                        <Import-Package>*</Import-Package>
+
+                        This bundle does not export any packages
+                        <Export-Package />
+
+                        Packages that are not exported but need to be 
+                            included need to be listed as Private-Package
+                        <Private-Package>com.redatoms.chat.server.connection</Private-Package>
+                        <Embed-Dependency>*;scope=compile|runtime;inline=false;artifactId=!cli|lang|runtime|tidy|jsch</Embed-Dependency>
+			            <Embed-Directory>target/dependency</Embed-Directory>
+			            <Embed-StripGroup>true</Embed-StripGroup>
+                    </instructions>
+                </configuration>
+            </plugin>
+
+			<plugin>
+				<artifactId>maven-dependency-plugin</artifactId>
+				<executions>
+					<execution>
+						<id>copy-dependencies</id>
+						<phase>package</phase>
+						<goals>
+							<goal>copy-dependencies</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+
+            JBoss AS plugin to deploy artifact
+            <plugin>
+                <groupId>org.jboss.as.plugins</groupId>
+                <artifactId>jboss-as-maven-plugin</artifactId>
+                <version>${version.jboss.maven.plugin}</version>
+                <configuration>
+                    <filename>${project.build.finalName}.jar</filename>
+                </configuration>
+            </plugin>
+
+            Compiler plugin enforces Java 1.6 compatibility to remove 
+                unnecessary warnings about execution environment in IDE
+            <plugin>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>${version.compiler.plugin}</version>
+                <configuration>
+                    <source>${maven.compiler.source}</source>
+                    <target>${maven.compiler.target}</target>
+                </configuration>
+            </plugin>
+
+        </plugins>
+    </build> -->
+</project>
